@@ -34,6 +34,7 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             buttonDetails_YVV = new Button();
             buttonPerformance_YVV = new Button();
             buttonAddRow_YVV = new Button();
@@ -58,11 +59,13 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             // 
             buttonDetails_YVV.FlatStyle = FlatStyle.Flat;
             buttonDetails_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonDetails_YVV.Location = new Point(168, 609);
+            buttonDetails_YVV.ForeColor = SystemColors.GradientInactiveCaption;
+            buttonDetails_YVV.Image = (Image)resources.GetObject("buttonDetails_YVV.Image");
+            buttonDetails_YVV.Location = new Point(12, 812);
+            buttonDetails_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonDetails_YVV.Name = "buttonDetails_YVV";
-            buttonDetails_YVV.Size = new Size(82, 51);
+            buttonDetails_YVV.Size = new Size(94, 67);
             buttonDetails_YVV.TabIndex = 11;
-            buttonDetails_YVV.Text = "Сведения";
             toolTip_YVV.SetToolTip(buttonDetails_YVV, "Нажмите чтобы узнать сведения о предмете");
             buttonDetails_YVV.UseVisualStyleBackColor = true;
             buttonDetails_YVV.Click += buttonDetails_YVV_Click;
@@ -72,9 +75,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonPerformance_YVV.BackColor = Color.LightBlue;
             buttonPerformance_YVV.FlatStyle = FlatStyle.Flat;
             buttonPerformance_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonPerformance_YVV.Location = new Point(12, 610);
+            buttonPerformance_YVV.Location = new Point(112, 816);
+            buttonPerformance_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonPerformance_YVV.Name = "buttonPerformance_YVV";
-            buttonPerformance_YVV.Size = new Size(150, 50);
+            buttonPerformance_YVV.Size = new Size(171, 67);
             buttonPerformance_YVV.TabIndex = 11;
             buttonPerformance_YVV.Text = "Успеваемость группы";
             toolTip_YVV.SetToolTip(buttonPerformance_YVV, "Нажмите чтобы узнать средний балл выбранной группы");
@@ -85,9 +89,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonAddRow_YVV.BackColor = Color.LightGreen;
             buttonAddRow_YVV.FlatStyle = FlatStyle.Flat;
             buttonAddRow_YVV.Font = new Font("Arial", 10F, FontStyle.Bold);
-            buttonAddRow_YVV.Location = new Point(722, 555);
+            buttonAddRow_YVV.Location = new Point(825, 740);
+            buttonAddRow_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonAddRow_YVV.Name = "buttonAddRow_YVV";
-            buttonAddRow_YVV.Size = new Size(120, 45);
+            buttonAddRow_YVV.Size = new Size(137, 60);
             buttonAddRow_YVV.TabIndex = 12;
             buttonAddRow_YVV.Text = "Добавить \r\nстроку";
             toolTip_YVV.SetToolTip(buttonAddRow_YVV, "Нажмите для добавления новой строки");
@@ -98,9 +103,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonDeleteRow_YVV.BackColor = Color.IndianRed;
             buttonDeleteRow_YVV.FlatStyle = FlatStyle.Flat;
             buttonDeleteRow_YVV.Font = new Font("Arial", 10F, FontStyle.Bold);
-            buttonDeleteRow_YVV.Location = new Point(722, 609);
+            buttonDeleteRow_YVV.Location = new Point(825, 812);
+            buttonDeleteRow_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonDeleteRow_YVV.Name = "buttonDeleteRow_YVV";
-            buttonDeleteRow_YVV.Size = new Size(120, 51);
+            buttonDeleteRow_YVV.Size = new Size(137, 68);
             buttonDeleteRow_YVV.TabIndex = 13;
             buttonDeleteRow_YVV.Text = "Удалить строку";
             toolTip_YVV.SetToolTip(buttonDeleteRow_YVV, "Выберите строку для удаления и нажмите кнопку");
@@ -111,9 +117,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonAddColumn_YVV.BackColor = Color.LightGreen;
             buttonAddColumn_YVV.FlatStyle = FlatStyle.Flat;
             buttonAddColumn_YVV.Font = new Font("Arial", 10F, FontStyle.Bold);
-            buttonAddColumn_YVV.Location = new Point(535, 555);
+            buttonAddColumn_YVV.Location = new Point(611, 740);
+            buttonAddColumn_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonAddColumn_YVV.Name = "buttonAddColumn_YVV";
-            buttonAddColumn_YVV.Size = new Size(120, 45);
+            buttonAddColumn_YVV.Size = new Size(137, 60);
             buttonAddColumn_YVV.TabIndex = 14;
             buttonAddColumn_YVV.Text = "Добавить столбец";
             toolTip_YVV.SetToolTip(buttonAddColumn_YVV, "Нажмите для добавления нового столбца");
@@ -124,9 +131,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonDeleteColumn_YVV.BackColor = Color.IndianRed;
             buttonDeleteColumn_YVV.FlatStyle = FlatStyle.Flat;
             buttonDeleteColumn_YVV.Font = new Font("Arial", 10F, FontStyle.Bold);
-            buttonDeleteColumn_YVV.Location = new Point(535, 609);
+            buttonDeleteColumn_YVV.Location = new Point(611, 812);
+            buttonDeleteColumn_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonDeleteColumn_YVV.Name = "buttonDeleteColumn_YVV";
-            buttonDeleteColumn_YVV.Size = new Size(120, 51);
+            buttonDeleteColumn_YVV.Size = new Size(137, 68);
             buttonDeleteColumn_YVV.TabIndex = 15;
             buttonDeleteColumn_YVV.Text = "Удалить столбец";
             toolTip_YVV.SetToolTip(buttonDeleteColumn_YVV, "Выберите столбец для удаления и нажмите кнопку");
@@ -136,9 +144,9 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             // 
             group_YVV.AutoSize = true;
             group_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
-            group_YVV.Location = new Point(33, 48);
+            group_YVV.Location = new Point(38, 64);
             group_YVV.Name = "group_YVV";
-            group_YVV.Size = new Size(129, 19);
+            group_YVV.Size = new Size(155, 24);
             group_YVV.TabIndex = 1;
             group_YVV.Text = "Выбор группы";
             // 
@@ -146,9 +154,9 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             // 
             subject_YVV.AutoSize = true;
             subject_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
-            subject_YVV.Location = new Point(33, 208);
+            subject_YVV.Location = new Point(38, 277);
             subject_YVV.Name = "subject_YVV";
-            subject_YVV.Size = new Size(145, 19);
+            subject_YVV.Size = new Size(177, 24);
             subject_YVV.TabIndex = 3;
             subject_YVV.Text = "Выбор предмета";
             // 
@@ -159,9 +167,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonGiveGroup_YVV.FlatStyle = FlatStyle.Flat;
             buttonGiveGroup_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             buttonGiveGroup_YVV.ForeColor = Color.Black;
-            buttonGiveGroup_YVV.Location = new Point(33, 119);
+            buttonGiveGroup_YVV.Location = new Point(38, 159);
+            buttonGiveGroup_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonGiveGroup_YVV.Name = "buttonGiveGroup_YVV";
-            buttonGiveGroup_YVV.Size = new Size(102, 55);
+            buttonGiveGroup_YVV.Size = new Size(117, 73);
             buttonGiveGroup_YVV.TabIndex = 4;
             buttonGiveGroup_YVV.Text = "Добавить";
             toolTip_YVV.SetToolTip(buttonGiveGroup_YVV, "Добавить дополнительную группу");
@@ -175,9 +184,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonAddSubject_YVV.FlatStyle = FlatStyle.Flat;
             buttonAddSubject_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             buttonAddSubject_YVV.ForeColor = Color.Black;
-            buttonAddSubject_YVV.Location = new Point(33, 287);
+            buttonAddSubject_YVV.Location = new Point(38, 383);
+            buttonAddSubject_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonAddSubject_YVV.Name = "buttonAddSubject_YVV";
-            buttonAddSubject_YVV.Size = new Size(102, 55);
+            buttonAddSubject_YVV.Size = new Size(117, 73);
             buttonAddSubject_YVV.TabIndex = 5;
             buttonAddSubject_YVV.Text = "Добавить";
             toolTip_YVV.SetToolTip(buttonAddSubject_YVV, "Добавить дополнительный предмет");
@@ -190,9 +200,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonDeleteGroup_YVV.FlatStyle = FlatStyle.Flat;
             buttonDeleteGroup_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             buttonDeleteGroup_YVV.ForeColor = Color.Black;
-            buttonDeleteGroup_YVV.Location = new Point(148, 119);
+            buttonDeleteGroup_YVV.Location = new Point(169, 159);
+            buttonDeleteGroup_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonDeleteGroup_YVV.Name = "buttonDeleteGroup_YVV";
-            buttonDeleteGroup_YVV.Size = new Size(102, 55);
+            buttonDeleteGroup_YVV.Size = new Size(117, 73);
             buttonDeleteGroup_YVV.TabIndex = 6;
             buttonDeleteGroup_YVV.Text = "Удалить";
             toolTip_YVV.SetToolTip(buttonDeleteGroup_YVV, "Удалить выбранную групп");
@@ -206,9 +217,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             buttonDeleteSubject_YVV.FlatStyle = FlatStyle.Flat;
             buttonDeleteSubject_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             buttonDeleteSubject_YVV.ForeColor = Color.Black;
-            buttonDeleteSubject_YVV.Location = new Point(148, 287);
+            buttonDeleteSubject_YVV.Location = new Point(169, 383);
+            buttonDeleteSubject_YVV.Margin = new Padding(3, 4, 3, 4);
             buttonDeleteSubject_YVV.Name = "buttonDeleteSubject_YVV";
-            buttonDeleteSubject_YVV.Size = new Size(102, 55);
+            buttonDeleteSubject_YVV.Size = new Size(117, 73);
             buttonDeleteSubject_YVV.TabIndex = 7;
             buttonDeleteSubject_YVV.Text = "Удалить";
             toolTip_YVV.SetToolTip(buttonDeleteSubject_YVV, "Удалить данный предмет");
@@ -217,9 +229,11 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             // dataGridView_YVV
             // 
             dataGridView_YVV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_YVV.Location = new Point(413, 12);
+            dataGridView_YVV.Location = new Point(472, 16);
+            dataGridView_YVV.Margin = new Padding(3, 4, 3, 4);
             dataGridView_YVV.Name = "dataGridView_YVV";
-            dataGridView_YVV.Size = new Size(559, 537);
+            dataGridView_YVV.RowHeadersWidth = 51;
+            dataGridView_YVV.Size = new Size(639, 716);
             dataGridView_YVV.TabIndex = 8;
             // 
             // comboBoxGroup_YVV
@@ -229,9 +243,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             comboBoxGroup_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             comboBoxGroup_YVV.ForeColor = Color.DarkSlateGray;
             comboBoxGroup_YVV.FormattingEnabled = true;
-            comboBoxGroup_YVV.Location = new Point(33, 81);
+            comboBoxGroup_YVV.Location = new Point(38, 108);
+            comboBoxGroup_YVV.Margin = new Padding(3, 4, 3, 4);
             comboBoxGroup_YVV.Name = "comboBoxGroup_YVV";
-            comboBoxGroup_YVV.Size = new Size(294, 27);
+            comboBoxGroup_YVV.Size = new Size(335, 32);
             comboBoxGroup_YVV.TabIndex = 9;
             comboBoxGroup_YVV.SelectedIndexChanged += comboBoxGroup_SelectedIndexChanged;
             // 
@@ -242,9 +257,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             comboBoxSubjects_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
             comboBoxSubjects_YVV.ForeColor = Color.DarkSlateGray;
             comboBoxSubjects_YVV.FormattingEnabled = true;
-            comboBoxSubjects_YVV.Location = new Point(33, 245);
+            comboBoxSubjects_YVV.Location = new Point(38, 327);
+            comboBoxSubjects_YVV.Margin = new Padding(3, 4, 3, 4);
             comboBoxSubjects_YVV.Name = "comboBoxSubjects_YVV";
-            comboBoxSubjects_YVV.Size = new Size(294, 27);
+            comboBoxSubjects_YVV.Size = new Size(335, 32);
             comboBoxSubjects_YVV.TabIndex = 10;
             comboBoxSubjects_YVV.SelectedIndexChanged += comboBoxSubject_SelectedIndexChanged;
             // 
@@ -257,10 +273,10 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(1121, 672);
+            ClientSize = new Size(1281, 896);
             Controls.Add(buttonDetails_YVV);
             Controls.Add(buttonPerformance_YVV);
             Controls.Add(buttonAddRow_YVV);
@@ -276,7 +292,9 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             Controls.Add(buttonGiveGroup_YVV);
             Controls.Add(subject_YVV);
             Controls.Add(group_YVV);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ТИУ - Журнал оценок";

@@ -35,16 +35,17 @@
             labelDetails.Font = new Font("Arial", 12F, FontStyle.Bold);
             labelDetails.Location = new Point(0, 0);
             labelDetails.Name = "labelDetails";
-            labelDetails.Size = new Size(387, 125);
+            labelDetails.Size = new Size(511, 182);
             labelDetails.TabIndex = 0;
             labelDetails.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(387, 125);
+            ClientSize = new Size(511, 182);
             Controls.Add(labelDetails);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormDetails";
             Text = "Сведения о предмете";
             ResumeLayout(false);
