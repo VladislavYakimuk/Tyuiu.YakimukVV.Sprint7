@@ -2,15 +2,11 @@
 {
     partial class FormPerformance
     {
-        /// <summary>
-        /// Обязательная переменная конструктора
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Очистка всех используемых ресурсов
-        /// </summary>
-        /// <param name="disposing">True, если управляемые ресурсы должны быть удалены</param>
+        /// <param name="disposing">
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,8 +17,6 @@
         }
 
         /// <summary>
-        /// Метод для инициализации компонентов формы
-        /// </summary>
         private void InitializeComponent()
         {
             labelAverage = new Label();
