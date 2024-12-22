@@ -34,6 +34,7 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            buttonDetails_YVV = new Button();
             buttonPerformance_YVV = new Button();
             buttonAddRow_YVV = new Button();
             buttonDeleteRow_YVV = new Button();
@@ -52,6 +53,19 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             openFileDialog_YVV = new OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)dataGridView_YVV).BeginInit();
             SuspendLayout();
+            // 
+            // buttonDetails_YVV
+            // 
+            buttonDetails_YVV.FlatStyle = FlatStyle.Flat;
+            buttonDetails_YVV.Font = new Font("Arial", 12F, FontStyle.Bold);
+            buttonDetails_YVV.Location = new Point(168, 609);
+            buttonDetails_YVV.Name = "buttonDetails_YVV";
+            buttonDetails_YVV.Size = new Size(82, 51);
+            buttonDetails_YVV.TabIndex = 11;
+            buttonDetails_YVV.Text = "Сведения";
+            toolTip_YVV.SetToolTip(buttonDetails_YVV, "Нажмите чтобы узнать сведения о предмете");
+            buttonDetails_YVV.UseVisualStyleBackColor = true;
+            buttonDetails_YVV.Click += buttonDetails_YVV_Click;
             // 
             // buttonPerformance_YVV
             // 
@@ -247,6 +261,7 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(1121, 672);
+            Controls.Add(buttonDetails_YVV);
             Controls.Add(buttonPerformance_YVV);
             Controls.Add(buttonAddRow_YVV);
             Controls.Add(buttonDeleteRow_YVV);
@@ -272,6 +287,7 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
         }
 
         #endregion
+        private Button buttonDetails_YVV;
         private Button buttonPerformance_YVV;
         private Button buttonAddRow_YVV;
         private Button buttonDeleteRow_YVV;

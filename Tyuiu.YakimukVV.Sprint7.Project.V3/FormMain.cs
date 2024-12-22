@@ -9,6 +9,18 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
         DataService ds = new DataService();
         private string databasePath = @"C:\База данных";
         private string currentFilePath;
+        private Dictionary<string, string> subjectDetails = new Dictionary<string, string>
+    {
+        { "Алгебра и геометрия", "Преподаватель: Панченко Наталья Борисовна\nАудитории: 512/524\nКоличество часов: 144" },
+        { "Дискретная математика", "Преподаватель: Терехова Наталья Владимировна\nАудитории: 304/522\nКоличество часов: 96" },
+        { "Иностранный язык", "Преподаватель: Медведева Инесса Александровна\nАудитория: 502\nКоличество часов: 70" },
+        { "Математический анализ", "Преподаватель: Панченко Наталья Борисовна\nАудитории: 512/524\nКоличество часов: 144" },
+        { "Основы российской государственности", "Преподаватель: Крючева Яна Владимировна\nАудитория: 1212\nКоличество часов: 96" },
+        { "Программирование", "Преподаватель: Пряхина Елена Николаевна\nАудитория: 1104\nКоличество часов: 88" },
+        { "Проектная деятельность", "Преподаватель: Игнатюк Юлия Леонидовна\nАудитория: 1012\nКоличество часов: 96" },
+        { "Теоретическая и прикладная информатика", "Преподаватель: Панченко Наталья Борисовна\nАудитория: 515\nКоличество часов: 144" },
+        { "Физическая культура и спорт", "Преподаватель: Тимканов Ренат Рашитович\nАудитория: 3(к)\nКоличество часов: 102" }
+    };
 
 
         public FormMain()
@@ -415,6 +427,26 @@ namespace Tyuiu.YakimukVV.Sprint7.Project.V3
                         buttonDeleteSubject_YVV.Enabled = false;
                     }
                 }
+            }
+        }
+        private void buttonDetails_YVV_Click(object sender, EventArgs e)
+        {
+            if (comboBoxSubjects_YVV.SelectedItem != null)
+            {
+                string selectedSubject = comboBoxSubjects_YVV.SelectedItem.ToString();
+                if (subjectDetails.TryGetValue(selectedSubject, out string details))
+                {
+                    FormDetails detailsForm = new FormDetails(details);
+                    detailsForm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Информация о предмете отсутствует.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Пожалуйста, выберите предмет.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
